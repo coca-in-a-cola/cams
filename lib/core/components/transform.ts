@@ -15,6 +15,8 @@ export abstract class AbstractTransform<TEntity extends Entity = Entity, Options
 
   abstract get matrix(): Matrix4;
 
+  abstract get children(): AbstractTransform[];
+
   start() { }
   update() { }
 }
